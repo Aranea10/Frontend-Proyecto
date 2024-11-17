@@ -1,0 +1,56 @@
+<div class="container mt-4">
+  <h2>Formulario de Items</h2>
+  <form (ngSubmit)="saveItem()">
+    <div class="mb-3">
+      <label>Nombre:</label>
+      <input
+        type="text"
+        [(ngModel)]="item.nombre"
+        name="nombre"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label>Descripción:</label>
+      <input
+        type="text"
+        [(ngModel)]="item.descripcion"
+        name="descripcion"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label>Precio:</label>
+      <input
+        type="number"
+        [(ngModel)]="item.precio"
+        name="precio"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label>Categoría:</label>
+      <input
+        type="text"
+        [(ngModel)]="item.categoria"
+        name="categoria"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label>Estado:</label>
+      <input
+        type="text"
+        [(ngModel)]="item.estado"
+        name="estado"
+        class="form-control"
+        required
+      />
+    </div>
+    <button class="btn btn-primary" type="submit">Guardar</button>
+  </form>
+</div>
